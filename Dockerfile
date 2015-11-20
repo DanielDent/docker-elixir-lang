@@ -16,7 +16,7 @@ RUN export DEBIAN_FRONTEND=noninteractive && \
     apt-get update -q && \
     apt-get install -y erlang-base=1:18.1 erlang-dev=1:18.1 erlang-eunit=1:18.1 erlang-xmerl=1:18.1 elixir=1.1.1-2 && \
     apt-get clean -y && \
-    rm -rf /var/cache/apt/*
+    rm -rf /var/lib/apt/* /var/cache/apt/*
 
 ENV LANG=en_US.UTF-8
 
