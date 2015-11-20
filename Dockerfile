@@ -1,4 +1,4 @@
-FROM ubuntu:14.04.3
+FROM ubuntu:15.04
 MAINTAINER Daniel Dent (https://www.danieldent.com)
 
 # Based on Dockerfile by shanesveller
