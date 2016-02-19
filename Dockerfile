@@ -15,7 +15,7 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get update -q \
     && echo "deb http://packages.erlang-solutions.com/ubuntu vivid contrib" > /etc/apt/sources.list.d/erlang-solutions.list \
     && DEBIAN_FRONTEND=noninteractive apt-get update -q \
     && DEBIAN_FRONTEND=noninteractive apt-get dist-upgrade -y \
-    && DEBIAN_FRONTEND=noninteractive apt-get install -y erlang-base=1:18.2 erlang-dev=1:18.2 erlang-eunit=1:18.2 erlang-xmerl=1:18.2 elixir=1.2.0-1 \
+    && DEBIAN_FRONTEND=noninteractive apt-get install -y erlang-base=1:18.2 erlang-dev=1:18.2 erlang-eunit=1:18.2 erlang-xmerl=1:18.2 erlang-parsetools=1:18.2 elixir=1.2.0-1 \
     && rm -rf /var/lib/apt/* /var/cache/apt/* \
     && mix local.hex --force \
     && mix local.rebar --force
